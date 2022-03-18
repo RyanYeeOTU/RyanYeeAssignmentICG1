@@ -1,0 +1,684 @@
+{
+	"ambient": {
+		"x": 0.10000000149011612,
+		"y": 0.10000000149011612,
+		"z": 0.10000000149011612
+	},
+	"default_material": "null",
+	"lights": [
+		{
+			"color": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			},
+			"position": {
+				"x": 0.0,
+				"y": 1.0,
+				"z": 3.0
+			},
+			"range": 300.0
+		},
+		{
+			"color": {
+				"x": 0.20000000298023224,
+				"y": 0.800000011920929,
+				"z": 0.10000000149011612
+			},
+			"position": {
+				"x": 1.0,
+				"y": 0.0,
+				"z": 3.0
+			},
+			"range": 4.0
+		},
+		{
+			"color": {
+				"x": 1.0,
+				"y": 0.20000000298023224,
+				"z": 0.10000000149011612
+			},
+			"position": {
+				"x": 0.0,
+				"y": 1.0,
+				"z": 3.0
+			},
+			"range": 4.0
+		}
+	],
+	"main_camera": "73d9d765-fa91-564e-98d0-f3a38f282541",
+	"objects": [
+		{
+			"children": [],
+			"components": {
+				"Gameplay::Camera": {
+					"clear_color": {
+						"w": -431602080.0,
+						"x": -431602080.0,
+						"y": -431602080.0,
+						"z": -431602080.0
+					},
+					"enabled": true,
+					"far_plane": 1000.0,
+					"fov_radians": 1.5707963705062866,
+					"guid": "73d9d765-fa91-564e-98d0-f3a38f282541",
+					"near_plane": 0.10000000149011612,
+					"ortho_enabled": false,
+					"ortho_size": 10.0
+				},
+				"SimpleCameraControl": {
+					"enabled": true,
+					"guid": "07e885c4-bd14-834b-b835-5b0b6f1e3d16",
+					"mouse_sensitivity": {
+						"x": 0.5,
+						"y": 0.30000001192092896
+					},
+					"move_speed": {
+						"x": 1.0,
+						"y": 1.0,
+						"z": 1.0
+					},
+					"shift_mult": 2.0
+				}
+			},
+			"guid": "cd021a08-79f0-1143-a6d5-66f4020eaa89",
+			"hide_in_inspector": false,
+			"name": "Main Camera",
+			"parent": "null",
+			"position": {
+				"x": -0.4000000059604645,
+				"y": -5.929999828338623,
+				"z": 9.399999618530273
+			},
+			"rotation": {
+				"w": 0.8512464761734009,
+				"x": 0.5247661471366882,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			}
+		},
+		{
+			"children": [],
+			"components": {
+				"Gameplay::Physics::RigidBody": {
+					"angular_damping": 0.004999999888241291,
+					"colliders": [
+						{
+							"extents": {
+								"x": 50.0,
+								"y": 50.0,
+								"z": 1.0
+							},
+							"guid": "e53b288a-cf39-fd48-b2d4-d8f7941c4891",
+							"position": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": -1.0
+							},
+							"rotation": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": 0.0
+							},
+							"scale": {
+								"x": 1.0,
+								"y": 1.0,
+								"z": 1.0
+							},
+							"type": "Box"
+						}
+					],
+					"enabled": true,
+					"group": 1,
+					"guid": "2b60cb72-d9fe-ed41-96c0-02213fd46171",
+					"linear_damping": 0.0,
+					"mask": -1,
+					"mass": 1.0,
+					"type": "Static"
+				},
+				"RenderComponent": {
+					"enabled": true,
+					"guid": "0ab4bb41-5b2a-0343-8191-84cc846fd367",
+					"material": "c616c2c6-63d5-2140-9269-edc9b3586786",
+					"mesh": "6d660536-afdd-3543-9641-996a5cd88e93"
+				}
+			},
+			"guid": "de0bbccb-21ed-4341-ba86-3d4cbe820b09",
+			"hide_in_inspector": false,
+			"name": "Plane",
+			"parent": "null",
+			"position": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"rotation": {
+				"w": 1.0,
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			}
+		},
+		{
+			"children": [],
+			"components": {
+				"RenderComponent": {
+					"enabled": true,
+					"guid": "d21eaba0-1a82-8e4d-8ac1-125b98c8bdc4",
+					"material": "775e32db-1350-bf49-90b4-fc5a3d445a73",
+					"mesh": "e7f947e1-a993-5641-a384-412eb4dbd3a2"
+				}
+			},
+			"guid": "92ff9b85-364c-a542-990d-a0d60daa14fe",
+			"hide_in_inspector": false,
+			"name": "Water",
+			"parent": "null",
+			"position": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"rotation": {
+				"w": 1.0,
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"scale": {
+				"x": 20.450000762939453,
+				"y": 27.600000381469727,
+				"z": 1.0
+			}
+		},
+		{
+			"children": [
+				{
+					"children": [],
+					"components": {
+						"RenderComponent": {
+							"enabled": true,
+							"guid": "5c25b4c5-ba69-4544-b917-a10f40ad4e1c",
+							"material": "770b4ae0-b250-6545-856d-5d4e4eb827d3",
+							"mesh": "0659fb7e-9f94-2d4c-acee-342e4b36aaaa"
+						}
+					},
+					"guid": "18464f69-fb04-a143-91eb-8d2f056aaa7e",
+					"hide_in_inspector": false,
+					"name": "Crossbow",
+					"parent": "2cee8034-f5e2-dd42-99a4-04ba0a8f53ff",
+					"position": {
+						"x": -0.4000000059604645,
+						"y": -5.929999828338623,
+						"z": 9.399999618530273
+					},
+					"rotation": {
+						"w": 0.8660253882408142,
+						"x": 0.5,
+						"y": 0.0,
+						"z": 0.0
+					},
+					"scale": {
+						"x": 0.949999988079071,
+						"y": 1.0,
+						"z": 1.0
+					}
+				},
+				{
+					"children": [],
+					"components": {
+						"RenderComponent": {
+							"enabled": true,
+							"guid": "00e35fad-d17b-b047-9ea3-f839bdb5e2b0",
+							"material": "9623fbb1-299d-2740-8196-c41672d2f4d5",
+							"mesh": "333ef909-bca5-cb45-b041-6020434878d6"
+						}
+					},
+					"guid": "79c1b9e7-a2f2-3740-a3d7-5abcf72e0398",
+					"hide_in_inspector": false,
+					"name": "demon",
+					"parent": "2cee8034-f5e2-dd42-99a4-04ba0a8f53ff",
+					"position": {
+						"x": 0.7099999785423279,
+						"y": 3.1500000953674316,
+						"z": 1.0
+					},
+					"rotation": {
+						"w": 0.005782394669950008,
+						"x": 0.006535808090120554,
+						"y": -0.7489271759986877,
+						"z": -0.6625948548316956
+					},
+					"scale": {
+						"x": 0.46000000834465027,
+						"y": 0.5,
+						"z": 0.6299999952316284
+					}
+				},
+				{
+					"children": [],
+					"components": {
+						"RenderComponent": {
+							"enabled": true,
+							"guid": "14c1101d-9269-bf41-afad-fb2ba4dc598f",
+							"material": "38becc28-658e-304f-b221-054f4f3f032e",
+							"mesh": "47b0e6e8-408e-f042-8e54-068a79d82de5"
+						},
+						"RotatingBehaviour": {
+							"enabled": true,
+							"guid": "e05c4075-803b-4e4b-8bf1-bf284ab1570d",
+							"speed": {
+								"x": 6.0,
+								"y": 0.0,
+								"z": -80.0
+							}
+						}
+					},
+					"guid": "2abbd009-088b-054d-ba54-9d634d9c71a4",
+					"hide_in_inspector": false,
+					"name": "pillar",
+					"parent": "2cee8034-f5e2-dd42-99a4-04ba0a8f53ff",
+					"position": {
+						"x": -7.320000171661377,
+						"y": -0.4300000071525574,
+						"z": 2.559999942779541
+					},
+					"rotation": {
+						"w": 0.6151523590087891,
+						"x": 0.38438987731933594,
+						"y": 0.36477234959602356,
+						"z": 0.583757758140564
+					},
+					"scale": {
+						"x": 2.2200000286102295,
+						"y": 1.9199999570846558,
+						"z": 1.0
+					}
+				},
+				{
+					"children": [],
+					"components": {
+						"RenderComponent": {
+							"enabled": true,
+							"guid": "1748b730-d4a0-0343-b71e-39c3097910a7",
+							"material": "38becc28-658e-304f-b221-054f4f3f032e",
+							"mesh": "47b0e6e8-408e-f042-8e54-068a79d82de5"
+						},
+						"RotatingBehaviour": {
+							"enabled": true,
+							"guid": "5a0895dd-f24f-4e47-98a2-96bddaaf53b6",
+							"speed": {
+								"x": 6.0,
+								"y": 0.0,
+								"z": -40.0
+							}
+						}
+					},
+					"guid": "7801d506-681b-d840-8616-165aa4a6b7e2",
+					"hide_in_inspector": false,
+					"name": "pillar2",
+					"parent": "2cee8034-f5e2-dd42-99a4-04ba0a8f53ff",
+					"position": {
+						"x": 5.300000190734863,
+						"y": 10.109999656677246,
+						"z": 1.0
+					},
+					"rotation": {
+						"w": 0.9510565400123596,
+						"x": -0.30901700258255005,
+						"y": 0.0,
+						"z": 0.0
+					},
+					"scale": {
+						"x": 1.809999942779541,
+						"y": 2.5299999713897705,
+						"z": 1.0
+					}
+				},
+				{
+					"children": [],
+					"components": {
+						"RenderComponent": {
+							"enabled": true,
+							"guid": "6a55f66f-5916-1546-8a82-6de644750503",
+							"material": "38becc28-658e-304f-b221-054f4f3f032e",
+							"mesh": "47b0e6e8-408e-f042-8e54-068a79d82de5"
+						},
+						"RotatingBehaviour": {
+							"enabled": true,
+							"guid": "dd959012-49d0-414c-9930-a7d03dc43cfe",
+							"speed": {
+								"x": 20.0,
+								"y": 0.0,
+								"z": -50.0
+							}
+						}
+					},
+					"guid": "58d11037-5061-c445-a054-eca388a635c9",
+					"hide_in_inspector": false,
+					"name": "pillar3",
+					"parent": "2cee8034-f5e2-dd42-99a4-04ba0a8f53ff",
+					"position": {
+						"x": 5.829999923706055,
+						"y": 2.7799999713897705,
+						"z": 1.0
+					},
+					"rotation": {
+						"w": 0.6388089060783386,
+						"x": 0.685038685798645,
+						"y": 0.23884086310863495,
+						"z": -0.25612547993659973
+					},
+					"scale": {
+						"x": 1.0,
+						"y": 1.0,
+						"z": 1.0
+					}
+				},
+				{
+					"children": [],
+					"components": {
+						"RenderComponent": {
+							"enabled": true,
+							"guid": "1f471c4e-3870-094d-af9d-076d88698f8a",
+							"material": "38becc28-658e-304f-b221-054f4f3f032e",
+							"mesh": "47b0e6e8-408e-f042-8e54-068a79d82de5"
+						},
+						"RotatingBehaviour": {
+							"enabled": true,
+							"guid": "3fd033f9-07d5-fe44-a98a-d0738df8b2d1",
+							"speed": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": -60.0
+							}
+						}
+					},
+					"guid": "45297fe4-50fd-e14d-8803-f20b4f3b42e1",
+					"hide_in_inspector": false,
+					"name": "pillar4",
+					"parent": "2cee8034-f5e2-dd42-99a4-04ba0a8f53ff",
+					"position": {
+						"x": -3.7100000381469727,
+						"y": 9.779999732971191,
+						"z": 1.0
+					},
+					"rotation": {
+						"w": 0.5372995734214783,
+						"x": -0.843391478061676,
+						"y": 0.0,
+						"z": 0.0
+					},
+					"scale": {
+						"x": 3.2699999809265137,
+						"y": 3.450000047683716,
+						"z": 1.0
+					}
+				}
+			],
+			"components": null,
+			"guid": "2cee8034-f5e2-dd42-99a4-04ba0a8f53ff",
+			"hide_in_inspector": false,
+			"name": "Demo Parent",
+			"parent": "null",
+			"position": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"rotation": {
+				"w": 1.0,
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			}
+		},
+		{
+			"children": [],
+			"components": {
+				"RenderComponent": {
+					"enabled": true,
+					"guid": "5c25b4c5-ba69-4544-b917-a10f40ad4e1c",
+					"material": "770b4ae0-b250-6545-856d-5d4e4eb827d3",
+					"mesh": "0659fb7e-9f94-2d4c-acee-342e4b36aaaa"
+				}
+			},
+			"guid": "18464f69-fb04-a143-91eb-8d2f056aaa7e",
+			"hide_in_inspector": false,
+			"name": "Crossbow",
+			"parent": "2cee8034-f5e2-dd42-99a4-04ba0a8f53ff",
+			"position": {
+				"x": -0.4000000059604645,
+				"y": -5.929999828338623,
+				"z": 9.399999618530273
+			},
+			"rotation": {
+				"w": 0.8660253882408142,
+				"x": 0.5,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"scale": {
+				"x": 0.949999988079071,
+				"y": 1.0,
+				"z": 1.0
+			}
+		},
+		{
+			"children": [],
+			"components": {
+				"RenderComponent": {
+					"enabled": true,
+					"guid": "00e35fad-d17b-b047-9ea3-f839bdb5e2b0",
+					"material": "9623fbb1-299d-2740-8196-c41672d2f4d5",
+					"mesh": "333ef909-bca5-cb45-b041-6020434878d6"
+				}
+			},
+			"guid": "79c1b9e7-a2f2-3740-a3d7-5abcf72e0398",
+			"hide_in_inspector": false,
+			"name": "demon",
+			"parent": "2cee8034-f5e2-dd42-99a4-04ba0a8f53ff",
+			"position": {
+				"x": 0.7099999785423279,
+				"y": 3.1500000953674316,
+				"z": 1.0
+			},
+			"rotation": {
+				"w": 0.005782394669950008,
+				"x": 0.006535808090120554,
+				"y": -0.7489271759986877,
+				"z": -0.6625948548316956
+			},
+			"scale": {
+				"x": 0.46000000834465027,
+				"y": 0.5,
+				"z": 0.6299999952316284
+			}
+		},
+		{
+			"children": [],
+			"components": {
+				"RenderComponent": {
+					"enabled": true,
+					"guid": "14c1101d-9269-bf41-afad-fb2ba4dc598f",
+					"material": "38becc28-658e-304f-b221-054f4f3f032e",
+					"mesh": "47b0e6e8-408e-f042-8e54-068a79d82de5"
+				},
+				"RotatingBehaviour": {
+					"enabled": true,
+					"guid": "e05c4075-803b-4e4b-8bf1-bf284ab1570d",
+					"speed": {
+						"x": 6.0,
+						"y": 0.0,
+						"z": -80.0
+					}
+				}
+			},
+			"guid": "2abbd009-088b-054d-ba54-9d634d9c71a4",
+			"hide_in_inspector": false,
+			"name": "pillar",
+			"parent": "2cee8034-f5e2-dd42-99a4-04ba0a8f53ff",
+			"position": {
+				"x": -7.320000171661377,
+				"y": -0.4300000071525574,
+				"z": 2.559999942779541
+			},
+			"rotation": {
+				"w": 0.6151523590087891,
+				"x": 0.38438987731933594,
+				"y": 0.36477234959602356,
+				"z": 0.583757758140564
+			},
+			"scale": {
+				"x": 2.2200000286102295,
+				"y": 1.9199999570846558,
+				"z": 1.0
+			}
+		},
+		{
+			"children": [],
+			"components": {
+				"RenderComponent": {
+					"enabled": true,
+					"guid": "1748b730-d4a0-0343-b71e-39c3097910a7",
+					"material": "38becc28-658e-304f-b221-054f4f3f032e",
+					"mesh": "47b0e6e8-408e-f042-8e54-068a79d82de5"
+				},
+				"RotatingBehaviour": {
+					"enabled": true,
+					"guid": "5a0895dd-f24f-4e47-98a2-96bddaaf53b6",
+					"speed": {
+						"x": 6.0,
+						"y": 0.0,
+						"z": -40.0
+					}
+				}
+			},
+			"guid": "7801d506-681b-d840-8616-165aa4a6b7e2",
+			"hide_in_inspector": false,
+			"name": "pillar2",
+			"parent": "2cee8034-f5e2-dd42-99a4-04ba0a8f53ff",
+			"position": {
+				"x": 5.300000190734863,
+				"y": 10.109999656677246,
+				"z": 1.0
+			},
+			"rotation": {
+				"w": 0.9510565400123596,
+				"x": -0.30901700258255005,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"scale": {
+				"x": 1.809999942779541,
+				"y": 2.5299999713897705,
+				"z": 1.0
+			}
+		},
+		{
+			"children": [],
+			"components": {
+				"RenderComponent": {
+					"enabled": true,
+					"guid": "6a55f66f-5916-1546-8a82-6de644750503",
+					"material": "38becc28-658e-304f-b221-054f4f3f032e",
+					"mesh": "47b0e6e8-408e-f042-8e54-068a79d82de5"
+				},
+				"RotatingBehaviour": {
+					"enabled": true,
+					"guid": "dd959012-49d0-414c-9930-a7d03dc43cfe",
+					"speed": {
+						"x": 20.0,
+						"y": 0.0,
+						"z": -50.0
+					}
+				}
+			},
+			"guid": "58d11037-5061-c445-a054-eca388a635c9",
+			"hide_in_inspector": false,
+			"name": "pillar3",
+			"parent": "2cee8034-f5e2-dd42-99a4-04ba0a8f53ff",
+			"position": {
+				"x": 5.829999923706055,
+				"y": 2.7799999713897705,
+				"z": 1.0
+			},
+			"rotation": {
+				"w": 0.6388089060783386,
+				"x": 0.685038685798645,
+				"y": 0.23884086310863495,
+				"z": -0.25612547993659973
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			}
+		},
+		{
+			"children": [],
+			"components": {
+				"RenderComponent": {
+					"enabled": true,
+					"guid": "1f471c4e-3870-094d-af9d-076d88698f8a",
+					"material": "38becc28-658e-304f-b221-054f4f3f032e",
+					"mesh": "47b0e6e8-408e-f042-8e54-068a79d82de5"
+				},
+				"RotatingBehaviour": {
+					"enabled": true,
+					"guid": "3fd033f9-07d5-fe44-a98a-d0738df8b2d1",
+					"speed": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": -60.0
+					}
+				}
+			},
+			"guid": "45297fe4-50fd-e14d-8803-f20b4f3b42e1",
+			"hide_in_inspector": false,
+			"name": "pillar4",
+			"parent": "2cee8034-f5e2-dd42-99a4-04ba0a8f53ff",
+			"position": {
+				"x": -3.7100000381469727,
+				"y": 9.779999732971191,
+				"z": 1.0
+			},
+			"rotation": {
+				"w": 0.5372995734214783,
+				"x": -0.843391478061676,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"scale": {
+				"x": 3.2699999809265137,
+				"y": 3.450000047683716,
+				"z": 1.0
+			}
+		}
+	],
+	"skybox": {
+		"mesh": "null",
+		"orientation": {
+			"w": 0.7071067690849304,
+			"x": 0.7071067690849304,
+			"y": 0.0,
+			"z": 0.0
+		},
+		"shader": "4936b90f-a54d-1144-a0d6-d451da83a3f4",
+		"texture": "eb9fab4d-ed45-3c4c-bc9a-e1eed86eed38"
+	}
+}
